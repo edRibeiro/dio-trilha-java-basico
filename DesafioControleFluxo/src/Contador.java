@@ -21,6 +21,8 @@ public class Contador {
             System.out.println("Você deve digitar apenas números inteiros.");
         } catch (ParametrosInvalidosException exception) {
             System.out.println(exception.getMessage());
+        } finally {
+            terminal.close();
         }
 
     }
